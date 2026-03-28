@@ -23,7 +23,10 @@ To prove the <b>Symmetry Collision</b>, we utilize a recursive <i>p-adic</i> val
 2.  **⚡ The Power Ceiling (Law of Symmetry):** For $c^z$ to be a perfect power, the Law of Symmetry demands its valuation be a multiple of the exponent $z$.
     > $$v_p(c^z) = z \cdot v_p(c)$$
 
-### ✅ Machine-Certified Contradiction in Lean 4 Web
+### ✅ Machine-Certified Contradiction in Lean 4 Web 
+
+https://live.lean-lang.org/
+
 When $z > 2$, these two values collide in a way that the **Lean 4 kernel** identifies as a logical impossibility:
 $$1 = z \cdot k$$ 
 Since $z$ is at least 3, no integer $k$ can satisfy this. The kernel reaches a **`No goals`** state, certifying that the coprime hypothesis is mathematically barred.
