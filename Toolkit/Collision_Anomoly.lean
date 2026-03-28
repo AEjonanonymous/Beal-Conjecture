@@ -1,5 +1,5 @@
 -- Self-contained Lean 4: Primitive Prime Valuation Searcher
--- Hunting for the "Double Birth" (v_p > 1)
+-- Hunting for the Double Birth (v_p > 1)
 
 def valuation (p n : Nat) : Nat :=
   if h : p > 1 ∧ n > 0 then
@@ -10,11 +10,11 @@ def valuation (p n : Nat) : Nat :=
   else 0
 termination_by n
 
-/-- Returns true if a prime p is "New" (does not divide a or b) 
+/-- Returns true if a prime p is new (does not divide a or b) 
     and has a valuation >= z (a potential Beal collision) --/
 def check_primitive_collision (a b x y z : Nat) : Bool :=
   let s := a^x + b^y
-  -- We check small primes to see if any "New" prime has high valuation
+  -- We check small primes to see if any new prime has high valuation
   let primes := [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
   primes.any (λ p => 
     let is_new := (a % p != 0) && (b % p != 0)
