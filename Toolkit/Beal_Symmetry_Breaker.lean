@@ -1,4 +1,6 @@
 -- Self-contained Lean 4: Symmetry Breaker
+-- Testing if the additive properties of the sum break the 
+-- multiplicative requirements of the power.
 
 /-- The Microscope: Counts p-adic layers --/
 def valuation (p n : Nat) : Nat :=
