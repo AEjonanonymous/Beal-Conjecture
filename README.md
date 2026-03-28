@@ -13,6 +13,10 @@ The **Beal Conjecture** ($a^x + b^y = c^z$) has long been a gatekeeper in number
 ### 💥 The Collision: 1 vs. $z$
 The proof identifies a *Structural Impossibility* for coprime bases by forcing two universal laws into a single logical coordinate.
 
+<h2>🔬 The Microscope: Recursive Valuation</h2>
+
+To prove the <b>Symmetry Collision</b>, we utilize a recursive <i>p-adic</i> valuation tool. This Microscope counts how many times a prime <i>p</i> divides the sum <i>a<sup>x</sup> + b<sup>y</sup></i>.
+
 1.  **⚖️ The Parity Floor (Asymmetric Birth):** The addition of coprime powers $a^x + b^y$ "gives birth" to a prime factor $p$ with a valuation of exactly **1**.
     > $$v_p(a^x + b^y) = 1$$
 
