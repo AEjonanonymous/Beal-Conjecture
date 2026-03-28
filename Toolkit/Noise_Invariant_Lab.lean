@@ -1,6 +1,6 @@
--- FILE NAME: The_Batch_Collision_Lab.lean
+-- FILE NAME: Noise_Invariant_Lab.lean
 -- DESCRIPTION: Iterates through coprime pairs to check for 
--- a "Perfect Beal Collision" (where all new prime valuations % z == 0).
+-- a perfect Beal Collision (where all new prime valuations % z == 0).
 
 def valuation (p n : Nat) : Nat :=
   if h : p > 1 ∧ n > 0 then
@@ -19,7 +19,7 @@ def is_perfect_beal_collision (a b x y z : Nat) : Bool :=
   else new_primes.all (λ p => (valuation p s) % z == 0)
 
 -- BATCH TESTING:
--- If these all return 'false', the "Residual 1" is an invariant law.
+-- If these all return 'false', the "Residual 1" is a possible invariant law.
 example : is_perfect_beal_collision 2 3 3 3 3 = false := by native_decide
 example : is_perfect_beal_collision 2 5 3 3 3 = false := by native_decide
 example : is_perfect_beal_collision 2 7 3 3 3 = false := by native_decide
