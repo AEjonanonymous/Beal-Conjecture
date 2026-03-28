@@ -1,5 +1,5 @@
 -- FILE NAME: Noise_Invariant_Lab.lean
--- DESCRIPTION: Iterates through coprime pairs to check for 
+-- Iterates through coprime pairs to check for 
 -- a perfect Beal Collision (where all new prime valuations % z == 0).
 
 def valuation (p n : Nat) : Nat :=
