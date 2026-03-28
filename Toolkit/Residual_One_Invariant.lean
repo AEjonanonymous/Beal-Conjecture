@@ -24,7 +24,7 @@ def is_perfect_beal_collision (a b x y z : Nat) : Bool :=
     -- Every single new prime must have a valuation that is a multiple of z
     new_primes.all (λ p => (valuation p s) % z == 0)
 
--- Test our "Near Miss" 2^3 + 7^3 again.
+-- Test our near miss" 2^3 + 7^3 again.
 -- Even though '3' has valuation 3, '13' has valuation 1.
 -- So this should return FALSE.
 example : is_perfect_beal_collision 2 7 3 3 3 = false := by
