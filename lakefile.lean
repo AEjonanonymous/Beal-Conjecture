@@ -1,7 +1,10 @@
 import Lake
 open Lake DSL
 
-package "Beal-Conjecture"
+package "beal-conjecture"
 
 @[default_target]
-lean_lib "Beal-Conjecture"
+lean_lib «Beal_Symmetry_Collision»
+
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4.git" @ "v4.29.0"
