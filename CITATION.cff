@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite this research as follows."
+authors:
+  - name: "Jonathan ƒ(n)"
+title: "The Beal Symmetry Collision: A Machine-Certified Solution via p-adic Valuations"
+version: 1.0.0
+doi: 10.5281/zenodo.19289605
+date-released: 2026-03-28
